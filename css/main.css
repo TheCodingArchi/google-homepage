@@ -1,0 +1,45 @@
+body {
+	font-family: arial, sans-serif;
+}
+/* Top Nav Styling Starts Here */
+header {
+	position: relative;
+	width: 100%;
+	padding: 15px 0;
+}
+header nav {
+	position: absolute;
+	right: 25px;
+}
+li {
+	display: inline;
+}
+header nav li a {
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.87);
+	padding: 5px;
+	line-height: 24px;
+	margin: 0 2px;
+}
+.top-nav:hover {
+	text-decoration: underline;
+}
+.top-nav-button {
+	display: inline-block;
+	line-height: 28px;
+	color: #ffffff;
+	background-color: #4583ec;
+	padding: 0px 12px;
+	margin: 0 5px;
+	font-weight: 700;
+	border: 1px solid #4583ec;
+	border-radius: 2px;
+}
+/* Top Nav Styling Ends Here */
+.content {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
