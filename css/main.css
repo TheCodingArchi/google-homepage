@@ -50,7 +50,7 @@ header nav li a {
 .content img {
 	margin: 12px auto; /* centers the google logo horizontally */
 }
-/* Styling the search field */
+/* Styling search field */
 main .content div {
 	border: 1px solid #eaeaeb;
 	width: max-content;
@@ -72,7 +72,7 @@ input[type="search"]:focus {
 .fas {
 	opacity: 0.3;
 }
-/* Search field styling ends here */
+/* Styling the search buttons */
 input[type="submit"] {
 	font-size: 14px;
 	font-weight: 400;
@@ -88,6 +88,7 @@ input[type="submit"]:hover {
 	border: 1px solid #c9c7c7;
 	color: #222222;
 }
+/* Styling the body naviagtions */
 main p a {
 	text-decoration: none;
 	font-size: 13px;
@@ -110,6 +111,7 @@ main p span {
 .languages {
 	padding: 0 5px;
 }
+/* styling the footer and it's content */
 footer {
 	position: fixed;
 	bottom: 0;
@@ -140,13 +142,13 @@ footer .leftnav ul {
 	float: left;
 	padding-left: 25px;
 }
-footer .leftnav li a {
-	padding-right: 15px;
-}
-footer .rightnav li a {
-	padding-left: 15px;
-}
 footer .rightnav ul {
 	float: right;
 	padding-right: 25px;
+}
+footer .leftnav li a {
+	padding-right: 18px; /* Adds appropriate spacing between the footer links */
+}
+footer .rightnav li a {
+	padding-left: 18px; /* Adds appropriate spacing between the footer links */
 }
