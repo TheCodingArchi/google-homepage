@@ -1,10 +1,10 @@
 body {
 	font-family: arial, sans-serif;
+	max-height: 100vh;
 }
 /* Top Nav Styling Starts Here */
 header {
 	position: relative;
-	width: 100%;
 	padding: 15px 0;
 }
 header nav {
@@ -21,10 +21,15 @@ header nav li a {
 	color: rgba(0, 0, 0, 0.87);
 	padding: 5px;
 	line-height: 24px;
-	margin: 0 2px;
+	margin: 0 1px;
 }
 .top-nav:hover {
 	text-decoration: underline;
+}
+.gg-menu-grid-r {
+	display: inline-block !important; /* removes the default display block from the icon*/
+	padding-top: 5px;
+	margin: 0 5px;
 }
 .top-nav-button {
 	display: inline-block;
@@ -39,7 +44,109 @@ header nav li a {
 }
 /* Top Nav Styling Ends Here */
 .content {
-	width: 60%;
-	margin: 0 auto;
+	margin: 125px 0;
 	text-align: center;
+}
+.content img {
+	margin: 12px auto; /* centers the google logo horizontally */
+}
+/* Styling the search field */
+main .content div {
+	border: 1px solid #eaeaeb;
+	width: max-content;
+	margin: 0 auto;
+	padding: 0 20px;
+	border-radius: 25px;
+}
+input[type="search"] {
+	padding: 10px 150px;
+	margin: 4px 22px;
+	border: none;
+}
+main .content div:hover {
+	box-shadow: 1px 1px 5px #c9c6c6;
+}
+input[type="search"]:focus {
+	outline: none;
+}
+.fas {
+	opacity: 0.3;
+}
+/* Search field styling ends here */
+input[type="submit"] {
+	font-size: 14px;
+	font-weight: 400;
+	color: rgba(34, 34, 34, 0.7);
+	line-height: 27px;
+	margin: 12px 3px;
+	padding: 5px 17px;
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	border: none;
+}
+input[type="submit"]:hover {
+	border: 1px solid #c9c7c7;
+	color: #222222;
+}
+main p a {
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: 400;
+	color: #1a0dab;
+}
+main p a:hover {
+	text-decoration: underline;
+}
+main p {
+	margin-top: 12px;
+	margin-bottom: 32px;
+}
+main p span {
+	font-size: 13px;
+	font-weight: 400;
+	color: #222222;
+	line-height: 28px;
+}
+.languages {
+	padding: 0 5px;
+}
+footer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: #f2f2f2;
+}
+footer p {
+	padding: 12px 31px;
+	color: #0000008a;
+	font-size: 15px;
+	font-weight: 400;
+	border-top: 1px solid rgba(206, 206, 207, 0.4);
+	border-bottom: 1px solid rgba(206, 206, 207, 0.4);
+}
+footer nav li a {
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 400;
+	color: #5f6368;
+	padding: 5px;
+	line-height: 40px;
+}
+footer nav li a:hover {
+	text-decoration: underline;
+}
+footer .leftnav ul {
+	float: left;
+	padding-left: 25px;
+}
+footer .leftnav li a {
+	padding-right: 15px;
+}
+footer .rightnav li a {
+	padding-left: 15px;
+}
+footer .rightnav ul {
+	float: right;
+	padding-right: 25px;
 }
