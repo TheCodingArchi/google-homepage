@@ -1,6 +1,6 @@
 body {
 	font-family: arial, sans-serif;
-	max-height: 100vh;
+	height: 100vh;
 }
 /* Top Nav Styling Starts Here */
 header {
@@ -10,6 +10,9 @@ header {
 header nav {
 	position: absolute;
 	right: 25px;
+}
+header nav ul {
+	display: inline-block;
 }
 li {
 	display: inline;
@@ -22,6 +25,9 @@ header nav li a {
 	padding: 5px;
 	line-height: 24px;
 	margin: 0 1px;
+}
+.hidden {
+	display: none;
 }
 .top-nav:hover {
 	text-decoration: underline;
@@ -88,7 +94,7 @@ input[type="submit"]:hover {
 	border: 1px solid #c9c7c7;
 	color: #222222;
 }
-/* Styling the body naviagtions */
+/* Styling the body navigations */
 main p a {
 	text-decoration: none;
 	font-size: 13px;
@@ -151,4 +157,56 @@ footer .leftnav li a {
 }
 footer .rightnav li a {
 	padding-left: 18px; /* Adds appropriate spacing between the footer links */
+}
+@media screen and (max-width: 484px) {
+	header nav {
+		position: static;
+	}
+	.hidden {
+		display: initial;
+	}
+	.gg-menu {
+		display: inline-block !important;
+	}
+	.hidden-mobile {
+		display: none;
+	}
+	header nav li a {
+		text-transform: uppercase;
+	}
+	.mobile-left {
+		float: left;
+	}
+	.mobile-right {
+		float: right;
+	}
+	.top-nav-button {
+		background-color: #f2f2f2;
+		color: #222222;
+		border: 1px solid #c9c7c7;
+		font-weight: 400;
+	}
+	input[type="search"] {
+		padding: 5px 25px;
+	}
+	.content img {
+		width: 40%;
+	}
+	main p span {
+		display: block;
+	}
+	footer div {
+		text-align: center;
+	}
+	footer .leftnav ul {
+		float: initial;
+		position: relative;
+		top: 40px;
+	}
+	footer .rightnav ul {
+		float: initial;
+		position: relative;
+		bottom: 40px;
+		padding-left: 25px;
+	}
 }

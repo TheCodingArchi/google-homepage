@@ -10,9 +10,13 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="#" class="top-nav">Gmail</a></li>
+            <ul class="mobile-left">
+                <li><a href="#" class="top-nav hidden"><i class="gg-menu"></i></a></li>
+                <li><a href="#" class="top-nav hidden">All</a></li>            
+                <li><a href="#" class="top-nav hidden-mobile">Gmail</a></li>
                 <li><a href="#" class="top-nav">Images</a></li>
+            </ul>
+            <ul class="mobile-right">
                 <li><a href="#"><i class="gg-menu-grid-r"></i></a></li>
                 <li><a href="#" class="top-nav-button">Sign in</a></li>
             </ul>
@@ -20,9 +24,9 @@
     </header>
     <!--top nav ends here-->
     <main>
-        <div class="content"><!-- This div is used to create the rounded corners for the seacrh field-->
+        <div class="content">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo"><br>
-            <div>
+            <div><!-- This div is used to create the rounded corners for the seacrh field-->
                 <i class="fas fa-search"></i><input type="search" title="Search"><i class="fas fa-microphone"></i>
             </div><br>
             <input type="submit" value="Google Search">
@@ -33,12 +37,13 @@
     </main>
     <footer>
         <p>Nigeria</p>
+        <div>
         <nav class="leftnav"> <!-- This class is used to place this nav to the left side of the footer-->
             <ul>
                 <li><a href="">Advertising</a></li>
                 <li><a href="">Business</a></li>
                 <li><a href="">About</a></li>
-                <li><a href="">How Search Works</a></li>
+                <li class="hidden-mobile"><a href="">How Search Works</a></li>
             </ul>
         </nav>
         <nav class="rightnav"> <!-- This class is used to place this nav to the right side of the footer-->
@@ -48,6 +53,7 @@
                 <li><a href="">Settings</a></li>
             </ul>
         </nav>
+        </div>
     </footer>
 </body>
 </html>
